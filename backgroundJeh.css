@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif; /* penggunakan font */
+    background: linear-gradient(to right, #d291da, #80ec84 ) ; /* warna latar belakang */
+    margin: 0; /* menghapus margin default browser untuk body */
+    padding: 0; /* menghapus padding default browser untuk body */
+    color: #333;
+}
+
+h1 {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold; 
+    text-align: center; /* mengatur teks menjadi rata tengah */
+    padding: 20px; /* memberikan jarak di sekitar teks */
+    border-radius: 20px; /* membuat sudut tepi menjadi melengkung */
+    display: inline-block; /* menyimpan elemen dalam satu blok dengan lebar berdasarkan konten */
+    animation: textAnimation 5s infinite; /* animasi heading */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* efek bayangan pada heading */
+ 
+  }
+  
+  @keyframes textAnimation {
+    0% { transform: scale(1); opacity: 1; } /* memulai animasi dengan skala 1 dan opasitas penuh */
+    50% { transform: scale(1.1); opacity: 0.8; } /* memperbesar skala sedikit dan mengurangi opasitas saat di tengah animasi */
+    100% { transform: scale(1); opacity: 1; } /* mengembalikan skala dan opasitas ke keadaan semula */
+  }
+
+/* style untuk tabel menu */
+table {
+    width: 100%; /* mengatur lebar tabel */
+    border-collapse: collapse; /* menghapus jarak antara border sel tabel */
+    margin-bottom: 20px; /* mengatur jarak di bawah tabel */
+}
+
+/* style untuk link di tabel kayak Home About dan Contact */
+td a {
+    display: block; /* mengatur tautan sebagai blok */
+    padding: 15px; /* menambahkan jarak dalam tautan */
+    text-align: center;
+    background-color: #4CAF50; /* warna latar belakang */
+    color: #333;
+    text-decoration: none; /* menghapus garis bawah */
+    font-weight: bold; /* membuat teks tautan menjadi tebal */
+    border-right: 1px solid #ddd; /* menambahkan garis kanan di setiap sel */
+}
+
+/* menghapus hover efek pada link dalam tabel */
+td a:hover {
+    background-color: transparent; /* transparan */
+}
+
+/* style heading */
+h1 {
+    text-align: center; /* fungsi meratakan teks heading */
+    color: black; 
+}
+
+/* style paragraf */
+p {
+    margin-left: 20px; /* mengatur jarak dari kiri untuk paragraf */
+    font-size: 20px; 
+    line-height: 1.6; /* mengatur tinggi baris */
+}
+

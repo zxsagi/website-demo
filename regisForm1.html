@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Added opening html tag with language attribute -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Corrected: Added missing comma */
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registrationForm {
+            background-color: #FFF;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #424242;
+            margin-bottom: 30px;
+        }
+
+        .rForm-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #757575;
+        }
+
+        /* Styling the Form input fields */
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"] {
+            width: 93%;
+            padding: 12px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.2s ease;
+        }
+
+        /* In-focus style */
+        input[type="text"]:focus, 
+        input[type="email"]:focus, 
+        input[type="password"]:focus {
+            border-color: #6200ea; /* Corrected: Style for focus effect */
+            outline: none;
+        }
+
+        .rForm-group .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="registrationForm">
+        <h2>Registration Form</h2>
+        <form action="/submit_registration" method="POST">
+            <div class="rForm-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="rForm-group"> <!-- Corrected: Moved closing div tag to the right position -->
+                <label for="email">Email</label> <!-- Corrected: removed "-" in for="email" -->
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="rForm-group"> <!-- Corrected: Moved closing div tag to the right position -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn-submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
